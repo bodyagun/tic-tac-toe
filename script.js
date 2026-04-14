@@ -82,6 +82,7 @@ let tie = false
         tie = false
         player1name.value = ""
         player2name.value = ""
+
     }
 
     function checkWinner() {
@@ -185,3 +186,7 @@ const DisplayController = (() => {
 
     return {renderBoard, updateStatus}
 })()
+
+// can start after game ended
+// P1 bigger issue
+// finish styling svg animations etc
