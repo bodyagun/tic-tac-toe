@@ -4,11 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tic Tac Toe</title>
-    <script src="/tic-tac-toe/script.js"></script>
+    <script src="/tic-tac-toe/script.js" defer></script>
     <link rel="stylesheet" href="/tic-tac-toe/styles/reset.css">
     <link rel="stylesheet" href="/tic-tac-toe/styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Tic Tac Toe</h1>
+    <div class="container">
+        <div class="left">
+            <div class="menu">
+                <h1>Tic Tac Toe</h1>
+                <p>Tic Tac Toe is a classic strategy game where two players compete to align
+                    three marks in a horizontal, vertical, or diagonal row on a three-by-three
+                    grid. Its simple rules and quick gameplay make it a timeless favorite for
+                    testing logic and anticipation against an opponent.</p>
+                <form id="player-form">
+                    <p>Enter player names:</p>
+                    <input type="text" id="player1name" placeholder="Player 1" required>
+                    <input type="text" id="player2name" placeholder="Player 2" required>
+                    <div class="btns">
+                        <button id="startBtn">Start game</button>
+                        <button type="button" id="resetBtn">Reset game</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="right">
+            <div class="fields">
+                <div class="field" id="0"></div>
+                <div class="field" id="1"></div>
+                <div class="field" id="2"></div>
+                <div class="field" id="3"></div>
+                <div class="field" id="4"></div>
+                <div class="field" id="5"></div>
+                <div class="field" id="6"></div>
+                <div class="field" id="7"></div>
+                <div class="field" id="8"></div>
+            </div>
+            <div class="ps">
+                <p id="p1">P1</p>
+                <p id="p2">P2</p>
+            </div>
+        </div>
+    </div>
+
 </body>
 </html>
